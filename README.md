@@ -51,22 +51,19 @@
 
 ## Outline
 
-
-- [:ferris\_wheel: SPROUT Pipeline](#ferris_wheel-sprout-pipeline)
+- [SPROUT Pipeline](#ferris_wheel-sprout-pipeline)
 - [Updates](#updates)
 - [Outline](#outline)
-- [:gear: Installation](#gear-installation)
+- [Installation](#gear-installation)
   - [Step 1: Setup](#step-1-setup)
   - [Step 2: Build Environment](#step-2-build-environment)
   - [Step 3: Dataset Preparation](#step-3-dataset-preparation)
-- [:rocket: Getting Started](#rocket-getting-started)
-- [:bar\_chart: Self-Reference Strategy](#bar_chart-self-reference-strategy)
-- [:bar\_chart: Performance](#bar_chart-performance)
-- [:books: Citation](#books-citation)
+- [Getting Started](#rocket-getting-started)
+- [Self-Reference Strategy](#bar_chart-self-reference-strategy)
+- [Performance](#bar_chart-performance)
+- [Citation](#books-citation)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
-
-
 
 ## :gear: Installation
 
