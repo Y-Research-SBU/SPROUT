@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  <img src="docs/figures/icon.png" align="center" width="20%">
+  <img src="docs/figures/icon.png" align="center" width="40%">
   
   <h3 align="center"><strong>SPROUT: Training-free Nuclear Instance Segmentation with Automatic Prompting</strong></h3>
 
