@@ -20,7 +20,6 @@ from utils import generate_ref_mask, remove_lines, merge_points
 from utils import sample_foreground_points, sample_background_points
 from utils import OptimalTransport
 from utils import DenseCRF
-from transformers import AutoImageProcessor, AutoModel
 
  
 def OT_mask(img, S, ot_fn, crf_fn, K, Hf, Wf):

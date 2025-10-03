@@ -28,10 +28,6 @@ def parse_args():
         "-s", "--size", type=int, default=1024,
         help="Resize dimensions for PNG images"
     )
-    p.add_argument(
-        "-f", "--fname", type=str, required=True,
-        help="txt index file name"
-    )
     return p.parse_args()
 
 def resize_tif_to_rgb(path: Path, size: int) -> np.ndarray:
@@ -83,51 +79,83 @@ def to_semantic_mask(instance_mask) -> np.ndarray:
     fg = np.any(instance_mask != 0, axis=2)
     return (fg.astype(np.uint8) * 255)
 
-def main():
-    args = parse_args()
-    root = args.input_dir
-    out = args.output_dir or root
-    txt_name = args.fname
+def process_split(split_root: Path, out_root: Path, size: int) -> list[str]:
+    """
+    Process a split directory (train/ or test/).
+    Returns the list of generated PNG filenames (basename only).
+    """
+    img_dir = split_root / "images"
+    ann_dir = split_root / "annotations"
 
-    img_dir = root / "images"
-    ann_dir = root / "annotations"
-    inst_dir = (out / "instances");   inst_dir.mkdir(parents=True, exist_ok=True)
-    sem_dir  = (out / "semantics");    sem_dir.mkdir(parents=True, exist_ok=True)
-    png_dir  = (out / "png");         png_dir.mkdir(parents=True, exist_ok=True)
+    inst_dir = out_root / "instances"
+    sem_dir  = out_root / "semantics"
+    png_dir  = out_root / "png"
+    inst_dir.mkdir(parents=True, exist_ok=True)
+    sem_dir.mkdir(parents=True, exist_ok=True)
+    png_dir.mkdir(parents=True, exist_ok=True)
 
     png_fnames = []
 
     for img_path in sorted(img_dir.glob("*.tif")):
         stem = img_path.stem
-        rgb = resize_tif_to_rgb(img_path, args.size)
 
-        cv2.imwrite(str(png_dir / f"{stem}.png"),
-                    cv2.cvtColor(rgb, cv2.COLOR_RGB2BGR))
-        png_name = f"{stem}.png"
-        png_fnames.append(png_name)
+        # 1) Resize and save PNG image
+        rgb_resized = resize_tif_to_rgb(img_path, size)
+        cv2.imwrite(
+            str(png_dir / f"{stem}.png"),
+            cv2.cvtColor(rgb_resized, cv2.COLOR_RGB2BGR)
+        )
+        png_fnames.append(f"{stem}.png")
 
-        # Load annotations
+        # 2) Build masks if annotation exists
         xml_path = ann_dir / f"{stem}.xml"
         if not xml_path.exists():
-            print(f"[!] No annotation for {stem}, skipping masks.")
+            print(f"[!] No annotation for {stem} in {ann_dir}, skipping masks.")
             continue
 
+        # Generate instance & semantic masks at original resolution first
         orig = cv2.imread(str(img_path), cv2.IMREAD_UNCHANGED)
-        h, w = orig.shape[:2]  
+        h, w = orig.shape[:2]
         polys = read_annotation(xml_path)
-        inst_mask = to_instance_mask(polys, h, w)
-        sem_mask  = to_semantic_mask(inst_mask)
+        inst_mask_full = to_instance_mask(polys, h, w)
+        sem_mask_full  = to_semantic_mask(inst_mask_full)
 
-        H, W, _ = rgb.shape
-        inst_mask = cv2.resize(inst_mask, (H, W), interpolation=cv2.INTER_NEAREST)
-        sem_mask  = cv2.resize(sem_mask,  (H, W), interpolation=cv2.INTER_NEAREST)
+        # Resize masks to match resized image size (W,H order for cv2.resize)
+        H, W, _ = rgb_resized.shape
+        inst_mask = cv2.resize(inst_mask_full, (W, H), interpolation=cv2.INTER_NEAREST)
+        sem_mask  = cv2.resize(sem_mask_full,  (W, H), interpolation=cv2.INTER_NEAREST)
+
         cv2.imwrite(str(inst_dir / f"{stem}.png"), inst_mask)
-        cv2.imwrite(str(sem_dir  / f"{stem}.png"), sem_mask)
+        cv2.imwrite(str(sem_dir / f"{stem}.png"), sem_mask)
 
-    index_path = Path(args.input_dir).parent / f"{txt_name}.txt"
-    with open(index_path, 'w') as f:
-        f.write('\n'.join(png_fnames))
+    return png_fnames
 
+
+def main():
+    args = parse_args()
+    root = args.input_dir
+    out = args.output_dir or root
+
+    # Expecting: root/{train,test}/{images,annotations}
+    splits = ["train", "test"]
+    for split in splits:
+        split_root = root / split
+        if not (split_root / "images").exists():
+            print(f"[!] Missing '{split}/images' under {root}, skipping split.")
+            continue
+        if not (split_root / "annotations").exists():
+            print(f"[!] Missing '{split}/annotations' under {root}, skipping split.")
+            continue
+
+        out_root = out / split
+        print(f"Processing split: {split_root} → {out_root}")
+        png_list = process_split(split_root, out_root, args.size)
+
+        # Write split-specific index file (e.g., root/train.txt)
+        index_path = root / f"{split}.txt"
+        with open(index_path, "w") as f:
+            f.write("\n".join(png_list))
+        print(f"Wrote index: {index_path} ({len(png_list)} entries)")
 
 
 if __name__ == "__main__":
