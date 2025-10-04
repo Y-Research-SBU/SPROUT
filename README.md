@@ -182,8 +182,8 @@ Prediced nuclear instance masks will look like:
 ## :bar_chart: Performance
 
 <p align="left">
-  <img src="docs/figures/radar.png" width="28.5%" />
-  <img src="docs/figures/bar.png" width="55%" />
+  <img src="docs/figures/radar.png" width="33.5%" />
+  <img src="docs/figures/bar.png" width="64.5%" />
 </p>
 
 
