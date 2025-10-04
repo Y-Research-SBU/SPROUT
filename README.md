@@ -78,7 +78,7 @@ conda activate sprout
 ### Step 2: Build Environment
 
 **General Requirments**
-- Linux with Python ≥ 3.10, PyTorch ≥ 2.5.1, and torchvision matching the PyTorch version. Install them together at [https://pytorch.org].
+- Linux with Python ≥ 3.10, PyTorch ≥ 2.5.1, and torchvision matching the PyTorch version. Install them together at https://pytorch.org.
 - [CUDA Toolkits](https://developer.nvidia.com/cuda-toolkit-archive) that match the CUDA version for your PyTorch installation (CUDA 12.1 recommended).
 - For Windows users, [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) with Ubuntu is strongly recommended.
 
