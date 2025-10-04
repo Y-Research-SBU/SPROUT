@@ -7,14 +7,14 @@
   <h3 align="center"><strong>SPROUT: Training-free Nuclear Instance Segmentation with Automatic Prompting</strong></h3>
 
   <p align="center">
-      <a href="", target='_blank'>Wen Zhang</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
-      <a href="https://soonera.github.io/qinren/" target='_blank'>Qin Ren</a><sup>2</sup>&nbsp;&nbsp;&nbsp;
-      <a href="https://github.com/liuwj003" target='_blank'>Wenjing Liu</a><sup>2</sup>&nbsp;&nbsp;&nbsp;
-      <a href="https://haibinling.github.io/" target='_blank'>Haibin Ling</a><sup>2</sup>&nbsp;&nbsp;&nbsp;
-      <a href="https://chenyuyou.me/" target='_blank'>Chenyu You</a><sup>2</sup>
+      <a href="", target='_blank'>Wen Zhang</a><sup>1,2</sup>&nbsp;&nbsp;&nbsp;
+      <a href="https://soonera.github.io/qinren/" target='_blank'>Qin Ren</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
+      <a href="https://github.com/liuwj003" target='_blank'>Wenjing Liu</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
+      <a href="https://haibinling.github.io/" target='_blank'>Haibin Ling</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
+      <a href="https://chenyuyou.me/" target='_blank'>Chenyu You</a><sup>1</sup>
   <br />
-  <sup>1</sup>Johns Hopkins University&nbsp;&nbsp;&nbsp;
-  <sup>2</sup>Stony Brook University&nbsp;&nbsp;&nbsp;
+  <sup>1</sup>Stony Brook University&nbsp;&nbsp;&nbsp;
+  <sup>2</sup>Johns Hopkins University&nbsp;&nbsp;&nbsp;
   </p>
 
 </p>
@@ -179,27 +179,30 @@ Prediced nuclear instance masks will look like:
  <img src="docs/figures/predictions.png" align="center" width="98%"> 
 
 
-## :bar_chart: Performance
+## Performance
 
 <p align="left">
   <img src="docs/figures/radar.png" width="33.5%" />
   <img src="docs/figures/bar.png" width="64.5%" />
 </p>
 
+## Contact
 
-## :books: Citation
+For questions, feedback, or collaboration opportunities, please contact:
+
+**Email**: [wzhan156@jh.edu](mailto:wzhan156@jh.edu), [chenyu.you@stonybrook.edu](mailto:chenyu.you@stonybrook.edu)
+
+## License
+
+MIT License
+
+## Citation
 If you find this work helpful for your research, please kindly consider citing our papers:
 
 ```bibtex
  @inproceedings{
           }
 ```
-
-
-## License
-
-SPROUT specific code is distributed under the <a rel="license" href="">MIT License</a>.
-
 
 
 ## Acknowledgements
