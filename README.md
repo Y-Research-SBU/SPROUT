@@ -178,57 +178,13 @@ Please ensure you have access to the required backbone models from Hugging Face 
 Prediced nuclear instance masks will look like:
  <img src="docs/figures/predictions.png" align="center" width="98%"> 
 
-## :bar_chart: Self-Reference Strategy
-
-| <img src="docs/figures/self-oneshot.png" align="center" width="98%"> |
-| :-- | 
-| One-shot (<span style="color:#0070C0">blue box</span>) fails to capture precise and diverse nuclei, even with similar pairs or backbones trained on natural and pathology images. Instead, our self-reference approach (<span style="color:#C00000">red box</span>) leverages high-confidence regions within the image to extract more robust features for similarity guidance.|
 
 ## :bar_chart: Performance
-<table>
-    <thead>
-        <tr>
-            <th rowspan="2"><strong>Metircs</strong></th>
-            <th colspan="6"><strong>Datasets</strong></th>
-        </tr>
-        <tr>
-            <th colspan="2"><strong>MoNuSeg</strong></th>
-            <th colspan="2"><strong>CPM17</strong></th>
-            <th colspan="2"><strong>TNBC</strong></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>AJI</td>
-            <td colspan="2" align="center">0.621</td>
-            <td colspan="2" align="center">0.662</td>
-            <td colspan="2" align="center">0.609</td>
-        </tr>
-        <tr>
-            <td>PQ</td>
-            <td colspan="2" align="center">0.601</td>
-            <td colspan="2" align="center">0.616</td>
-            <td colspan="2" align="center">0.626</td>
-        </tr>
-        <tr>
-            <td>DQ</td>
-            <td colspan="2" align="center">0.817</td>
-            <td colspan="2" align="center">0.796</td>
-            <td colspan="2" align="center">0.796</td>
-        </tr>
-        <tr>
-            <td>SQ</td>
-            <td colspan="2" align="center">0.736</td>
-            <td colspan="2" align="center">0.774</td>
-            <td colspan="2" align="center">0.787</td>
-        </tr>
-            <td>Dice</td>
-            <td colspan="2" align="center">0.795</td>
-            <td colspan="2" align="center">0.821</td>
-            <td colspan="2" align="center">0.780</td>
-        </tr>
-    </tbody>
-</table>
+
+<p align="left">
+  <img src="docs/figures/radar.png" width="28.5%" />
+  <img src="docs/figures/bar.png" width="55%" />
+</p>
 
 
 ## :books: Citation
