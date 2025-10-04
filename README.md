@@ -89,6 +89,7 @@ pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https
 ```
 
 **SAM2 Installation**
+
 Our code integrates with [SAM2](https://github.com/facebookresearch/sam2/blob/main/INSTALL.md). Please make sure PyTorch is installed first.
 
 Replace the `sam2` directory with the official repository:
