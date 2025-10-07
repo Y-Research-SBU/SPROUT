@@ -7,14 +7,15 @@
   <h3 align="center"><strong>SPROUT: Training-free Nuclear Instance Segmentation with Automatic Prompting</strong></h3>
 
   <p align="center">
-      <a href="", target='_blank'>Wen Zhang</a><sup>1,2</sup>&nbsp;&nbsp;&nbsp;
-      <a href="https://soonera.github.io/qinren/" target='_blank'>Qin Ren</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
+      <a href="", target='_blank'>Wen Zhang</a><sup>1,2 ★</sup>&nbsp;&nbsp;&nbsp;
+      <a href="https://soonera.github.io/qinren/" target='_blank'>Qin Ren</a><sup>1 ★</sup>&nbsp;&nbsp;&nbsp;
       <a href="https://github.com/liuwj003" target='_blank'>Wenjing Liu</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
       <a href="https://haibinling.github.io/" target='_blank'>Haibin Ling</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
       <a href="https://chenyuyou.me/" target='_blank'>Chenyu You</a><sup>1</sup>
   <br />
   <sup>1</sup>Stony Brook University&nbsp;&nbsp;&nbsp;
   <sup>2</sup>Johns Hopkins University&nbsp;&nbsp;&nbsp;
+  <sup>★</sup> Equal Contribution&nbsp;&nbsp;&nbsp;
   </p>
 
 </p>
