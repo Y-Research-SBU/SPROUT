@@ -180,12 +180,14 @@ Prediced nuclear instance masks will look like:
  <img src="docs/figures/predictions.png" align="center" width="98%"> 
 
 
-## Performance
+
+## :chart_with_upwards_trend: Performance
 
 <p align="left">
   <img src="docs/figures/radar.png" width="33.5%" />
   <img src="docs/figures/bar.png" width="64.5%" />
 </p>
+
 
 ## Contact
 
@@ -193,9 +195,11 @@ For questions, feedback, or collaboration opportunities, please contact:
 
 **Email**: [wzhan156@jh.edu](mailto:wzhan156@jh.edu), [chenyu.you@stonybrook.edu](mailto:chenyu.you@stonybrook.edu)
 
+
 ## License
 
 MIT License
+
 
 ## Citation
 If you find this work helpful for your research, please kindly consider citing our papers:
