@@ -4,7 +4,7 @@
 <p align="center">
   <img src="docs/figures/icon.png" align="center" width="40%">
   
-  <h3 align="center"><strong>SPROUT: Training-free Nuclear Instance Segmentation with Automatic Prompting</strong></h3>
+  <h3 align="center"><strong>Supervise Less, See More: Training-free Nuclear Instance Segmentation with Prototype-Guided Prompting</strong></h3>
 
   <p align="center">
       <a href="", target='_blank'>Wen Zhang</a><sup>1,2 ★</sup>&nbsp;&nbsp;&nbsp;
@@ -48,7 +48,9 @@
 | SPROUT consists of three steps: (i) Feature–prototype similarity mapping: H\&E stain priors is to identify high-confidence foreground and background regions, from which clustering extracts representative prototypes that serve as anchors for similarity matching; (ii) POT-Scan: a partial optimal transport scheme that progressively aligns features to prototypes, filtering ambiguous assignments through partial mass transport; (iii) Activation prompting: prototype-reweighted activations are aggregated into foreground maps, from which positive and negative point prompts are sampled to guide SAM-based instance prediction. For clarity, high-dimensional features are illustrated as squares and stars. |
 
 
-## Updates
+## :rocket: News
+- 2026.05 Our paper is accepted by ICML 2026!
+- 2025.11 Code released! Let's embrace training-free nuclear instance segmentation!
 
 ## Outline
 
@@ -205,7 +207,11 @@ MIT License
 If you find this work helpful for your research, please kindly consider citing our papers:
 
 ```bibtex
- @inproceedings{
+ @inproceedings{zhang2025superviselessmoretrainingfree,
+    title={Supervise Less, See More: Training-free Nuclear Instance Segmentation with Prototype-Guided Prompting},
+    author={Wen Zhang and Qin Ren and Wenjing Liu and Haibin Ling and Chenyu You},
+    booktitle={International Conference on Machine Learning},
+    year={2026}
           }
 ```
 
