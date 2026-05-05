@@ -207,12 +207,12 @@ MIT License
 If you find this work helpful for your research, please kindly consider citing our papers:
 
 ```bibtex
- @inproceedings{zhang2025superviselessmoretrainingfree,
-    title={Supervise Less, See More: Training-free Nuclear Instance Segmentation with Prototype-Guided Prompting},
-    author={Wen Zhang and Qin Ren and Wenjing Liu and Haibin Ling and Chenyu You},
-    booktitle={International Conference on Machine Learning},
-    year={2026}
-          }
+@inproceedings{zhang2025superviselessmoretrainingfree,
+  title={Supervise Less, See More: Training-free Nuclear Instance Segmentation with Prototype-Guided Prompting},
+  author={Wen Zhang and Qin Ren and Wenjing Liu and Haibin Ling and Chenyu You},
+  booktitle={International Conference on Machine Learning},
+  year={2026}
+}
 ```
 
 
