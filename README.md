@@ -6,6 +6,8 @@
   
   <h3 align="center"><strong>Supervise Less, See More: Training-free Nuclear Instance Segmentation with Prototype-Guided Prompting</strong></h3>
 
+  <h3 align="center">ICML 2026</h3>
+
   <p align="center">
       <a href="", target='_blank'>Wen Zhang</a><sup>1,2 ★</sup>&nbsp;&nbsp;&nbsp;
       <a href="https://soonera.github.io/qinren/" target='_blank'>Qin Ren</a><sup>1 ★</sup>&nbsp;&nbsp;&nbsp;
