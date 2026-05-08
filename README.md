@@ -4,8 +4,8 @@
 <p align="center">
   <img src="docs/figures/icon.png" align="center" width="40%">
   
-  <h3 align="center"><strong>Supervise Less, See More: Training-free Nuclear Instance Segmentation with Prototype-Guided Prompting</strong></h3>
-
+  <h2 align="center"><strong>Supervise Less, See More: <br/> Training-free Nuclear Instance Segmentation with Prototype-Guided Prompting</strong></h2>
+  
   <h3 align="center">ICML 2026</h3>
 
   <p align="center">
