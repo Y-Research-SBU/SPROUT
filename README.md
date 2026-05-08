@@ -9,7 +9,7 @@
   <h3 align="center">ICML 2026</h3>
 
   <p align="center">
-      <a href="", target='_blank'>Wen Zhang</a><sup>1,2 ★</sup>&nbsp;&nbsp;&nbsp;
+      <a href="https://kkwenz.github.io", target='_blank'>Wen Zhang</a><sup>1,2 ★</sup>&nbsp;&nbsp;&nbsp;
       <a href="https://soonera.github.io/qinren/" target='_blank'>Qin Ren</a><sup>1 ★</sup>&nbsp;&nbsp;&nbsp;
       <a href="https://github.com/liuwj003" target='_blank'>Wenjing Liu</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
       <a href="https://haibinling.github.io/" target='_blank'>Haibin Ling</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
@@ -21,11 +21,13 @@
   </p>
 
 </p>
-   
   </a>
   <p align="center">
-  <a href="">
-    <img src="https://img.shields.io/badge/Paper-%F0%9F%93%96-blue">
+  <a href="https://arxiv.org/abs/2511.19953">
+    <img src="https://img.shields.io/badge/💡%20ArXiv-2511.19953-B31B1B?style=flat-square" alt="Paper">
+  </a>
+  <a href="https://Y-Research-SBU.github.io/SPROUT">
+    <img src="https://img.shields.io/badge/Project-Website-blue?style=flat-square&logo=googlechrome" alt="Project Website">
   </a>
   <a href="https://huggingface.co/Y-Research-Group">
     <img src="https://img.shields.io/badge/Hugging%20Face-Dataset-green?style=flat&logo=huggingface" alt="Hugging Face Dataset">
@@ -33,15 +35,14 @@
     <a href="https://github.com/Y-Research-SBU/SPROUT" target='_blank'>
     <img src="https://visitor-badge.laobi.icu/badge?page_id=Y-Research-SBU.SPROUT&left_color=gray&right_color=firebrick">
   </a>
-
-
 </p>
 
+---
 
 `SPROUT` is a training-free framework that instantiates stain priors and prototype-guided optimal transport to prompt SAM, enabling robust and scalable nuclear segmentation.
 - To the best of our knowledge, SPROUT is the first fully training-free framework for nuclear instance segmentation in H\&E pathology images without annotations. By addressing the limitations of reference-based methods, we introduce a novel self-reference mechanism that offers a lightweight yet generalizable solution to domain gaps.
 - We propose POT-Scan, a principled scheme with theoretical guarantees that adaptively balances nuclear coverage and noise suppression. Our quantitative and qualitative analyses further elucidate the intrinsic behavior of prompt generation and verify its robust performance under diverse hyperparameter settings.
-- We conduct extensive experiments on three challenging benchmarks, where SPROUT consistently achieves remarkable performance gains ($+8.2\%$ AJI on MoNuSeg). These highlight the potential of robust prompt generation and patch-based decomposition to unlock the zero-shot capabilities of vision foundation models in histopathology.
+- We conduct extensive experiments on three challenging benchmarks, where SPROUT consistently achieves remarkable performance gains (+8.2% AJI on MoNuSeg). These highlight the potential of robust prompt generation and patch-based decomposition to unlock the zero-shot capabilities of vision foundation models in histopathology.
 
 
 ## :ferris_wheel: SPROUT Pipeline
