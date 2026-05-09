@@ -29,11 +29,11 @@
   <a href="https://Y-Research-SBU.github.io/SPROUT">
     <img src="https://img.shields.io/badge/Project-Website-blue?style=flat-square&logo=googlechrome" alt="Project Website">
   </a>
-  <a href="https://huggingface.co/Y-Research-Group">
-    <img src="https://img.shields.io/badge/Hugging%20Face-Dataset-green?style=flat&logo=huggingface" alt="Hugging Face Dataset">
+  <a href="https://github.com/Y-Research-SBU/SPROUT">
+    <img src="https://img.shields.io/badge/GitHub-Code-006400?style=flat-square&logo=github" alt="GitHub">
   </a>
-    <a href="https://github.com/Y-Research-SBU/SPROUT" target='_blank'>
-    <img src="https://visitor-badge.laobi.icu/badge?page_id=Y-Research-SBU.SPROUT&left_color=gray&right_color=firebrick">
+  <a href="https://huggingface.co/Y-Research-Group">
+    <img src="https://img.shields.io/badge/Hugging%20Face-Dataset-F9A825?style=flat-square&logo=huggingface" alt="Hugging Face Dataset">
   </a>
 </p>
 
