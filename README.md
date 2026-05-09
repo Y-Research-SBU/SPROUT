@@ -24,7 +24,7 @@
   </a>
   <p align="center">
   <a href="https://arxiv.org/abs/2511.19953">
-    <img src="https://img.shields.io/badge/💡%20ArXiv-2511.19953-B31B1B?style=flat-square" alt="Paper">
+    <img src="https://img.shields.io/badge/ArXiv-2511.19953-B31B1B?style=flat-square&logo=arxiv" alt="Paper">
   </a>
   <a href="https://Y-Research-SBU.github.io/SPROUT">
     <img src="https://img.shields.io/badge/Project-Website-blue?style=flat-square&logo=googlechrome" alt="Project Website">
