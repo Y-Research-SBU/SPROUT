@@ -32,8 +32,8 @@
   <a href="https://github.com/Y-Research-SBU/SPROUT">
     <img src="https://img.shields.io/badge/GitHub-Code-006400?style=flat-square&logo=github" alt="GitHub">
   </a>
-  <a href="https://huggingface.co/Y-Research-Group">
-    <img src="https://img.shields.io/badge/Hugging%20Face-Dataset-F9A825?style=flat-square&logo=huggingface" alt="Hugging Face Dataset">
+  <a href="https://huggingface.co/datasets/Kkkelsey/SPROUT/tree/main">
+    <img src="https://img.shields.io/badge/Hugging%20Face-Dataset-green?style=flat&logo=huggingface" alt="Hugging Face Dataset">
   </a>
 </p>
 
